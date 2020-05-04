@@ -2,6 +2,7 @@ require 'puppet/provider/package'
 require 'json'
 
 Puppet::Type.type(:package).provide :powershellcore, parent: Puppet::Provider::Package do
+  desc "Provider to be used on systems with powershell core, powershell version 5.1 or higher or 'pwsh'"
   initvars
   has_feature :installable, :uninstallable, :upgradeable, :versionable, :install_options
   commands pwsh: 'pwsh'

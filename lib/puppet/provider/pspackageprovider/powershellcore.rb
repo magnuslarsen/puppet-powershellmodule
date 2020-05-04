@@ -1,6 +1,7 @@
 require 'json'
 
 Puppet::Type.type(:pspackageprovider).provide :powershellcore do
+  desc 'Provider used to invoke pwsh commands on systems with powershell version 5.1 or higher.'
   confine operatingsystem: :windows
   commands pwsh: 'pwsh'
 

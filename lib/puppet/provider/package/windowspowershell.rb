@@ -1,4 +1,5 @@
 Puppet::Type.type(:package).provide(:windowspowershell, parent: :powershellcore) do
+  desc "Provider to be used on systems with powershell 5.1 or lower. 'PowerShell'"
   initvars
   confine operatingsystem: :windows
   confine feature: :powershellgetwindows
