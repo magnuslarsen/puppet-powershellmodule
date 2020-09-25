@@ -1,7 +1,7 @@
 {
-  "name": "encore-powershellmodule",
-  "version": "2.1.0",
-  "author": "Encore Technologies",
+  "name": "magnuslarsen-powershellmodule",
+  "version": "2.1.1",
+  "author": "cdhunt FORK",
   "summary": "Manage PowerShell modules and repositories",
   "license": "Apache-2.0",
   "source": "https://github.com/EncoreTechnologies/puppet-powershellmodule",

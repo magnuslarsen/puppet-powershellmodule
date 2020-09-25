@@ -1,3 +1,7 @@
+# THIS IS A FORK
+This repo will not be maintained! This is only here, since I need this fix created by cdhunt:
+https://github.com/EncoreTechnologies/puppet-powershellmodule/pull/15
+
 # powershellmodule
 
 [![Build Status](https://travis-ci.org/EncoreTechnologies/puppet-powershellmodule.svg?branch=master)](https://travis-ci.org/EncoreTechnologies/puppet-powershellmodule)
@@ -9,20 +13,38 @@
 
 #### Table of Contents
 
-1. [Description](#description)
-1. [Setup - The basics of getting started with powershellmodule](#setup)
-    * [Windows PowerShell](#windows-powershell)
-    * [PowerShell Core](#powershell-core)
-1. [Usage](#usage)
-    * [Register an internal PowerShell repository](#register-an-internal-powershell-repository)
-    * [Use the PowerShell Gallery](#use-the-powershell-gallery)
-    * [Side by side installation](#side-by-side-installation)
-    * [The provider](#the-provider)
-    * [Full working example](#full-working-example)
-1. [Reference](#reference)
-    * [Types](#types)
-    * [Providers](#providers)
-1. [Development - Guide for contributing to the module](#development)
+- [THIS IS A FORK](#this-is-a-fork)
+- [powershellmodule](#powershellmodule)
+      - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Setup](#setup)
+    - [Windows PowerShell](#windows-powershell)
+    - [PowerShell Core](#powershell-core)
+  - [Usage](#usage)
+    - [Install PowerShellGet PackageProviders](#install-powershellget-packageproviders)
+    - [Register an internal PowerShell repository](#register-an-internal-powershell-repository)
+    - [Use the PowerShell Gallery](#use-the-powershell-gallery)
+    - [Side by side installation](#side-by-side-installation)
+    - [The provider](#the-provider)
+    - [Full Working example](#full-working-example)
+  - [Limitations](#limitations)
+  - [Reference](#reference)
+    - [Types](#types)
+    - [package](#package)
+    - [pspackageprovider](#pspackageprovider)
+      - [Properties/Parameters](#propertiesparameters)
+        - [`ensure`](#ensure)
+        - [`name`](#name)
+        - [`version`](#version)
+    - [psrepository](#psrepository)
+      - [Properties/Parameters](#propertiesparameters-1)
+      - [`name`](#name-1)
+      - [`source_location`](#source_location)
+      - [`installation_policy`](#installation_policy)
+    - [Providers](#providers)
+      - [`windowspowershell`](#windowspowershell)
+      - [`powershellcore`](#powershellcore)
+  - [Development](#development)
 
 ## Description
 
